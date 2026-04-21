@@ -2,5 +2,7 @@
   <Folder Name="/WPF/">
     <Project Path="Lesson1/Lesson1.csproj" Id="add39ad4-bea2-4048-8ac8-afffacd569ca" />
     <Project Path="Lesson2/Lesson2.csproj" Id="3468633b-75b7-4629-961d-630ca173e014" />
+    <Project Path="Lesson3.ViewModel/Lesson3.ViewModel.csproj" Id="18465c38-0511-4937-a712-5c20aa6c0e49" />
+    <Project Path="Lesson3/Lesson3.csproj" Id="7c4d5768-401e-4cc2-8e77-0e3088d35100" />
   </Folder>
 </Solution>
