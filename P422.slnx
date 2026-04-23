@@ -4,5 +4,8 @@
     <Project Path="Lesson2/Lesson2.csproj" Id="3468633b-75b7-4629-961d-630ca173e014" />
     <Project Path="Lesson3.ViewModel/Lesson3.ViewModel.csproj" Id="18465c38-0511-4937-a712-5c20aa6c0e49" />
     <Project Path="Lesson3/Lesson3.csproj" Id="7c4d5768-401e-4cc2-8e77-0e3088d35100" />
+    <Project Path="Lesson4/Lesson4.csproj" Id="07350e02-bdd9-4ec9-befb-4e9c9beb7039" />
   </Folder>
+  <Project Path="Lesson4.Model/Lesson4.Model.csproj" Id="6acfc305-ab03-4e13-a4b5-31e5c321e1fa" />
+  <Project Path="Lesson4.ViewModel/Lesson4.ViewModel.csproj" Id="03d682e7-1130-4b3a-b7d7-8fc3b061c868" />
 </Solution>
