@@ -10,31 +10,59 @@
     Height="800"
     mc:Ignorable="d">
     <StackPanel>
-        <ListBox Height="400" ItemsSource="{Binding Products}">
+        <ListBox
+            Height="400"
+            ItemsSource="{Binding Products}"
+            SelectedItem="{Binding SelectedProduct}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <TextBlock Text="{Binding Name}" />
                         <TextBlock Text="{Binding Category}" />
                         <TextBlock Text="{Binding Price}" />
+                        <Button
+                            Command="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.DeleteProductCommand}"
+                            CommandParameter="{Binding}"
+                            Content="Удалить" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <StackPanel>
-            <TextBox
-                Width="350"
-                Height="30"
-                MaxLength="100"
-                Text="{Binding Name}" />
-            <TextBox
-                Name="TextBoxCategory"
-                Width="350"
-                Height="30" />
-            <TextBox
-                Name="TextBoxPrice"
-                Width="350"
-                Height="30" />
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="Добавление продукта" />
+                <TextBox
+                    Width="350"
+                    Height="30"
+                    MaxLength="100"
+                    Text="{Binding Name}" />
+                <TextBox
+                    Name="TextBoxCategory"
+                    Width="350"
+                    Height="30" />
+                <TextBox
+                    Name="TextBoxPrice"
+                    Width="350"
+                    Height="30" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="Редактирование продукта" />
+                <TextBox
+                    Width="350"
+                    Height="30"
+                    MaxLength="100"
+                    Text="{Binding SelectedProduct.Name, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox
+                    Width="350"
+                    Height="30"
+                    Text="{Binding SelectedProduct.Category, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox
+                    Width="350"
+                    Height="30"
+                    Text="{Binding SelectedProduct.Price, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Button Command="{Binding SaveEditedProductCommand}" Content="Сохранить" />
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </Window>
