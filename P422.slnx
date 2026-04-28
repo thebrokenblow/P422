@@ -11,5 +11,7 @@
     <Project Path="Lesson5First.Model/Lesson5.Model.csproj" />
     <Project Path="Lesson5First.ViewModel/Lesson5.ViewModel.csproj" />
     <Project Path="Lesson5First/Lesson5First.csproj" />
+    <Project Path="Lesson6.ViewModel/Lesson6.ViewModel.csproj" Id="91cc5e62-1130-4dbe-b23c-7c2c144c1d63" />
+    <Project Path="Lesson6/Lesson6.csproj" Id="7c3e86ce-0c43-4ee8-a082-4f7b95ca853e" />
   </Folder>
 </Solution>

@@ -12,6 +12,9 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        //init
+        //INotifyPropertyChange
+        //ICommand
 
         DataContext = new MainViewModel();
     }
