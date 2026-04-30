@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/AdoNet/">
+    <Project Path="Lesson1AdoNet/Lesson1AdoNet.csproj" Id="2bfa4146-38e1-4d0e-a72f-1fbcaada2ac6" />
+  </Folder>
   <Folder Name="/WPF/">
     <Project Path="Lesson1/Lesson1.csproj" Id="add39ad4-bea2-4048-8ac8-afffacd569ca" />
     <Project Path="Lesson2/Lesson2.csproj" Id="3468633b-75b7-4629-961d-630ca173e014" />
